@@ -15,25 +15,3 @@ gemini:
     url: https://generativelanguage.googleapis.com/v1beta/openai
     model: gemini-3-flash-preview
     apikey: ${API_KEY}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
