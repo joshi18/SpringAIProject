@@ -5,8 +5,8 @@ spring:
     port: 8080
   ai:
     openai:
-      api-key: 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 # Google gemini project api key
-    chat:
+      api-key: ${API_KEY}
+      chat:
       options:
         model: gpt-5
 
@@ -14,7 +14,8 @@ gemini:
   api:
     url: https://generativelanguage.googleapis.com/v1beta/openai
     model: gemini-3-flash-preview
-    apikey: AIzaSyCVxw2FJQDVqYThWxN1WEE-CNhJHouf_gk
+    apikey: ${API_KEY}
+
 
 
 
