@@ -1,6 +1,6 @@
 package com.example.SpringAIProject.Controller;
 
-import com.example.SpringAIProject.Services.MultiModelService;
+import com.example.SpringAIProject.Services.ModelService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.ai.chat.client.ChatClient;
@@ -22,7 +22,7 @@ public class StreamChatController {
     private ChatModel chatModel;
 
     @Autowired
-    private MultiModelService multiModelService;
+    private ModelService multiModelService;
 
 //    public ChatController(ChatModel chatModel) {
 //        this.chatClient = ChatClient.builder(chatModel).build();
@@ -52,7 +52,7 @@ public class StreamChatController {
 
 
 
-        ChatClient chatClient = multiModelService.serviceProvider(provider);
+        ChatClient chatClient = multiModelService.getChatClient(provider);
 
 
             if (model.isEmpty() || model.isBlank()){
