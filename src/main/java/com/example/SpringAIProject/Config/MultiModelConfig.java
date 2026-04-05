@@ -2,7 +2,6 @@ package com.example.SpringAIProject.Config;
 
 
 import org.springframework.ai.chat.client.ChatClient;
-import org.springframework.ai.model.chat.client.autoconfigure.ChatClientBuilderConfigurer;
 import org.springframework.ai.openai.OpenAiChatModel;
 import org.springframework.ai.openai.OpenAiChatOptions;
 import org.springframework.ai.openai.api.OpenAiApi;
