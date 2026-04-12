@@ -31,6 +31,9 @@ public class OrderService {
 // here we call the database also .
         // For sample purpose i am storing into the database
         // here we use JPA Repositories also
+       // @Jparepository
+                // . findBy Id()
+        // findBy Status()
 
 
         return new OrderResponse();
