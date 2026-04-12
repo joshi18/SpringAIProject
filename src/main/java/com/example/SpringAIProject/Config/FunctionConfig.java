@@ -15,8 +15,11 @@ public class FunctionConfig {
     @Autowired
     private OrderService orderService;
 
-
-    @Tool(description = "Getting the order response from the database")
+//How LLM knows to call your tool
+    //Because of description 👇
+    // If description is bad:
+//❌ Tool won’t be called
+    @Tool(description = "Getting the order status from the database")
     public OrderResponse getResponse(
             @ToolParam(description = "To check the staus of specific order Id")
             String orderId){
