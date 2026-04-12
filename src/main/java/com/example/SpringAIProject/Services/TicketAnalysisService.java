@@ -31,6 +31,9 @@ public class TicketAnalysisService {
 
     public TicketAnalyserAI analyseTicket(String ticketText, String provider,String model){
 
+        // here with help of provider we are getting object of chat client.
+        // OpenAi , Gemini, Anthropic Cloud
+
         ChatClient chatClient = modelService.getChatClient(provider);
 
         // Create a ticket analyser Propmt using different method
@@ -118,6 +121,27 @@ public class TicketAnalysisService {
             // In production, consider custom exception for better error handling
             throw new RuntimeException("Failed to load code review template", e);
         }
+
+
+
+        // tool related information
+//        {
+//            "type": "function",
+//                "function": {
+//            "name": "getOrderStatus",
+//                    "description": "Get order status by ID",
+//                    "parameters": {
+//                "type": "object",
+//                        "properties": {
+//                    "orderId": {
+//                        "type": "string",
+//                                "description": "Order ID"
+//                    }
+//                },
+//                "required": ["orderId"]
+//            }
+
+
 
     }
 
